@@ -6,6 +6,9 @@ const app = express();
 const port = 8080;
 const host = '0.0.0.0';
 
+app.get('/', (req, res) => {
+ res.send('testing');
+})
 app.get('/hello', (req, res) => {
   res.send('Hello Ganesh Balajii!');
 })
